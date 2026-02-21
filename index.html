@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <!-- Redirect menggunakan Meta Tag (Cadangan jika JS mati) -->
+    <meta http-equiv="refresh" content="0; url=1.html">
+    
+    <style>
+        body { 
+            font-family: sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            color: #666;
+        }
+    </style>
+<style>
+  
+  .floating-nav.prev { left: 30; }
+  .floating-nav.next { right: 0; }
+  .pagination-numbers-container { text-align: center; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+    <p>Mengarahkan ke halaman utama... Jika tidak berpindah, <a href="1.html">klik di sini</a>.</p>
+
+    <script>
+        // Redirect menggunakan JavaScript (Lebih cepat)
+        window.location.replace("1.html");
+    </script>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+</html>

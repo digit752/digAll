@@ -1,0 +1,75 @@
+/* Menghilangkan margin bawaan browser */
+body {
+    margin: 0;
+    padding-top: 100px; /* Supaya konten tidak tertutup baris angka */
+    font-family: sans-serif;
+}
+
+/* Container utama bar navigasi */
+.top-pagination {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+/* Pembungkus angka-angka */
+.nav-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Jarak antar lingkaran */
+    max-width: 90%;
+}
+
+/* Desain Lingkaran Angka */
+.nav-wrapper a {
+    display: flex !important; /* Paksa tampil sebagai kotak */
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #333;
+    background: #ffffff;
+    border-radius: 50%; /* Membuat lingkaran */
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Shadow angka */
+    transition: 0.3s;
+}
+
+/* Angka yang sedang aktif */
+.nav-wrapper a.active {
+    background: #007bff !important;
+    color: white !important;
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Tombol Biru Melayang Kiri Kanan */
+.float-btn {
+    position: fixed;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 10000;
+}
+.prev { left: 20px; }
+.next { right: 20px; }
